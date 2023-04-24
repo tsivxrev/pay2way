@@ -1,15 +1,62 @@
 ---
+import Layout from '../layouts/Layout.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="ЗаПроезд">
+    <div class="w-full flex flex-col p-4">
+        <div class="hero flex w-full items-center justify-center">
+            <div class="text flex-1 max-w-2xl flex flex-col gap-2">
+                <div class="title font-bold text-4xl">Используй преимущества Системы Быстрых Платежей при оплате проезда</div>
+                <div class="subtitle text-2xl">Осталось придумать крутой текст</div>
+            </div>
+            <picture class="hidden md:block">
+                <source srcset="/assets/station.svg">
+                <img class="hero-image" src="/assets/station.svg" width="500" height="500">
+            </picture>
+        </div>
+        <div class="wrapper w-full flex flex-col items-center">
+            <section class="prose prose-neutral">
+                <h1 id="-">ЗаПроезд это:</h1>
+                <h2 id="-">Преимущества Системы быстрых платежей (СБП)</h2>
+                <ul>
+                   <li>Комиссия банка для общественного транспорта 0.4%</li>
+                   <li>Не требует приобретения терминалов и другого оборудования</li>
+                   <li>Безопасно, платежные и персональные данные пассажиров не используются и не хранятся</li>
+                </ul>
+                <h2 id="-">Оплата проезда в общественном транспорте с использованием:</h2>
+                <ul>
+                   <li>QR кодов</li>
+                   <li>NFC меток</li>
+                   <li>Beacon меток</li>
+                   <li>PIN кодов</li>
+                </ul>
+                <h2 id="-">Пополнение баланса небанковских карт (транспортных, школьных) с использованием:</h2>
+                <ul>
+                   <li>QR кодов</li>
+                   <li>NFC меток</li>
+                   <li>По номеру карты</li>
+                </ul>
+                <h2 id="-">Пассажиру доступны несколько способов оплаты на смартфоне:</h2>
+                <ul>
+                   <li>Мобильное приложение</li>
+                   <li>Чат - бот
+                      -- Мобильный сайт
+                   </li>
+                </ul>
+                <h2 id="-">Пассажирским автотранспортным предприятиям:</h2>
+                <ul>
+                   <li>Чистое API СБП, работает с любым банком РФ без доработок. Ваши разработчики могут самостоятельно реализовать любое решение с использованием СБП.</li>
+                   <li>Наши разработчики самомтоятельно или совместно с вашими выполнят необходимые доработки по внедрению СБП на Вашем предприятии.</li>
+                </ul>
+                <h2 id="-">Существующие интеграции и внедрения:</h2>
+                <p>К настоящему моменту выполнены интеграции с системами:</p>
+                <ul>
+                   <li>&quot;Удобный маршрут&quot;</li>
+                   <li>&quot;Транснависофт&quot;</li>
+                   <li>фискализация &quot;Атол&quot;.</li>
+                </ul>
+                <p>Проект реализован и успешно работает в г. Кирове (оплата проезда, пополнение транспортных и школьных карт), в г. Кирово-Чепецк (пополнение транспортных и школьных карт), в г. Тюмень (пополнение транспортных и школьных карт).</p>                
+            </section>
+        </div>
+    </div>
+</Layout>

@@ -1,0 +1,13 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const { title } = Astro.props;
+---
+
+<Layout title={title}>
+    <div class="wrapper p-4 flex flex-col items-center">
+        <article class="prose prose-neutral w-full">
+            <slot />
+        </article>
+    </div>
+</Layout>
